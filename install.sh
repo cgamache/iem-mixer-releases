@@ -155,6 +155,7 @@ UNIT
 </dict>
 </plist>
 PLIST
+    launchctl bootout system /Library/LaunchDaemons/com.iem-mixer.plist 2>/dev/null || true
     launchctl bootstrap system /Library/LaunchDaemons/com.iem-mixer.plist
     echo "launchd daemon loaded."
   fi
